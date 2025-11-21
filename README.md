@@ -1,6 +1,8 @@
 # Ex. No: 12 – Packet Tracer: Use Ping and Traceroute to Test Network Connectivity
-# Date: ______________________
+# Date: 21-11-2025
+______________________
 ________________________________________<br>
+
 # Objective
 To test and restore IPv4 and IPv6 network connectivity using diagnostic commands (ping and tracert), identify faults, and verify proper routing between end devices in a dual-stack (IPv4 + IPv6) topology.<br>
 Tasks:<br>
@@ -9,14 +11,17 @@ Tasks:<br>
 •	Locate and fix connectivity issues.<br>
 •	Verify successful restoration of both IPv4 and IPv6 communication.<br>
 ________________________________________<br>
+
 # Apparatus / Tools Required
 • Cisco Packet Tracer<br>
 • 3 Routers (R1, R2, R3 – 2911 or equivalent)<br>
 • 4 PCs (PC1–PC4)<br>
 • Copper straight-through and serial DCE/DTE cables<br>
 ________________________________________<br>
+
 # Network Topology Diagram
-(Insert your Packet Tracer screenshot showing R1 ↔ R2 ↔ R3 with PCs PC1–PC4 connected.)<br>
+<img width="1919" height="1013" alt="image" src="https://github.com/user-attachments/assets/2d34bb14-2873-4e53-a5ea-da73182ef4b0" />
+<br>
 ________________________________________<br>
 Addressing Table<br>
 Device	Interface	IPv4 Address / Subnet Mask	IPv6 Address / Prefix	Default Gateway<br>
@@ -31,18 +36,22 @@ PC2	NIC	(DHCP/Manual IPv6)	(Auto IPv6)	R1 G0/0<br>
 PC3	NIC	(DHCP/Manual IPv4)	(Auto IPv6)	R3 G0/0<br>
 PC4	NIC	(DHCP/Manual IPv6)	(Auto IPv6)	R3 G0/0<br>
 ________________________________________<br>
+
 # Procedure for Students – Use Ping and Traceroute (13.2.7)
 Download the Activity File<br>
 Ensure the file 13.2.7-packet-tracer---use-ping-and-traceroute-to-test-network-connectivity.pka is saved in an accessible folder (e.g., Downloads or Documents).<br>
 ________________________________________
+
 # Open Cisco Packet Tracer
 Launch Cisco Packet Tracer → Click File → Open...<br>
 Select the .pka file and click Open.<br>
 ________________________________________<br>
+
 # Start the Activity
 The pre-configured topology (R1–R3 and PCs PC1–PC4) will load automatically.<br>
 Follow the right-hand Instruction Panel for activity steps.<br>
 ________________________________________
+
 # Part 1: Test and Restore IPv4 Connectivity<br>
 # Step 1: Verify IPv4 Configuration<br>
 1.	Click PC1, open Command Prompt, and type:<br>
@@ -119,8 +128,22 @@ show ipv6 interface brief	Verify IPv6 interface status<br>
 ________________________________________
 # Output (Attach Screenshots)
 • Command outputs (ipconfig, ipv6config, ping, tracert) for PCs.<br>
+
+<img width="1919" height="1016" alt="image" src="https://github.com/user-attachments/assets/cf45c2d6-e3b6-45fe-bd33-79401aebf8b0" />
+
+<img width="1919" height="1016" alt="image" src="https://github.com/user-attachments/assets/c9afef58-4499-4d5c-9503-a41a97b7dfd9" />
+
+<img width="1919" height="1014" alt="image" src="https://github.com/user-attachments/assets/d9d47292-4184-4e77-9b2c-6bbece4963d3" />
+
 • Router interface and routing tables.<br>
+
+<img width="1919" height="1013" alt="image" src="https://github.com/user-attachments/assets/0d3aec4f-9f6a-4002-b0ed-27eb007ce189" />
+
 • Successful ping results after fixes.<br>
+
+<img width="1917" height="1006" alt="image" src="https://github.com/user-attachments/assets/1806bf9d-a330-4e22-aa8b-067af08ace3b" />
+<img width="1917" height="1015" alt="image" src="https://github.com/user-attachments/assets/4c5321a2-8821-4046-af27-887d540e01ac" />
+
 ________________________________________<br>
 # Result
 IPv4 and IPv6 connectivity issues were diagnosed and resolved using ping and tracert commands. Routers and PCs achieved full dual-stack communication after correcting configuration errors, confirming network restoration and routing accuracy.<br>
